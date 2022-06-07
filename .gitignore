@@ -1,0 +1,7 @@
+/*/data
+/*/models
+/*/code/.ipynb_checkpoints
+/*/code/mlruns
+/*/code/artifacts
+/mlruns
+*.db

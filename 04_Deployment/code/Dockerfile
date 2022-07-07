@@ -6,4 +6,5 @@ WORKDIR /app
 COPY ["Pipfile", "Pipfile.lock", "./"]
 RUN pipenv install --system --deploy
 COPY ["starter.py", "./"]
-ENTRYPOINT ["/bin/bash"]
+#ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["python", "starter.py"]

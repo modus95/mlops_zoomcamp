@@ -24,7 +24,8 @@ def run(year, mm):
     print(date_str)
     
     #input_file = f'../data/fhv_tripdata_{date_str}.parquet'
-    input_file = f'https://nyc-tlc.s3.amazonaws.com/trip+data/fhv_tripdata_{date_str}.parquet'
+    #input_file = f'https://nyc-tlc.s3.amazonaws.com/trip+data/fhv_tripdata_{date_str}.parquet'
+    input_file = f'https://raw.githubusercontent.com/alexeygrigorev/datasets/master/nyc-tlc/fhv/fhv_tripdata_{date_str}.parquet'
     print(f'Downloading data from {input_file}...')
     df = read_data(input_file)
    
